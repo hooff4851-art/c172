@@ -1,0 +1,13 @@
+<body>
+  <div id="app">正在載入內容...</div>
+
+  <script>
+    /* 這是一段 Base64 編碼過的 HTML 內容 */
+    const _content = "PC9oMT48aDEgY2xhc3M9ImExIj48ZGl2IGNsYXNzPSJoYW1idXJnZXItY29udGFpbmVyIiBpZD0ibWVudS10b2dn" // ...後略
+    
+    // 網頁載入後自動解碼並顯示
+    document.getElementById('app').innerHTML = atob(_content);
+    
+    /* 接下來放置上面的混淆 JS 邏輯... */
+  </script>
+</body>
